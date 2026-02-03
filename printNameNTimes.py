@@ -9,7 +9,7 @@ def printName(name, count):
 argCount = len(sys.argv) - 1
 if argCount == 1:
 	if sys.argv[1].isdigit():
-		printf("Error: Name expected, not a number")
+		print("Error: Name expected, not a number")
 		sys.exit()
 	name = sys.argv[1]
 	printName(name = name, count = 1)
@@ -27,4 +27,3 @@ elif argCount == 2:
 # name = sys.argv[1]
 # count = int(sys.argv[2])
 printName(name = name, count = count)
-printName(sys.argv[0])

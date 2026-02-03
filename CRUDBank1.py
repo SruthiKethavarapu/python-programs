@@ -21,7 +21,7 @@ def loadAccounts():
 			accounts.append(customer)
 	return accounts
 
-def saveAccountss(accounts):
+def saveAccounts(accounts):
 	with open(FILENAME, "w") as fpAccounts:
 		for account in accounts:
 			fpAccounts.write(str([account.accountNumber, account.name, account.balance, account.status]) + "\n")
@@ -50,7 +50,7 @@ def showAllAccounts():
 		print("Account Number: ", account.accountNumber)
 		print("Name: ", account.name)
 		print("Balance: ", account.balance)
-		print(f"Status: {'Active' if account. status else "Inactive"}\n")
+		print(f"Status: {'Active' if account.status else 'Inactive'}\n")
 		print("-" * 20)
 
 def updateAccount():
